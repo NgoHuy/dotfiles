@@ -7,13 +7,8 @@ input type:keyboard {
 
 bar {
     swaybar_command waybar
-    #tray_bindcode 272 nop
-    #tray_bindcode 273 nop
-    #status_command i3status
 }
 
-#bindcode 272 nop
-#bindcode 272 nop
 
 input type:touchpad {
     tap enabled
@@ -25,8 +20,6 @@ exec swayidle -w \
 	timeout 605 'swaymsg "output * dpms off"' \
 	resume 'swaymsg "output * dpms on"'
 
-#output eDP-1 scale 1.5
-#xwayland disable
 bindsym Mod1+F2 exec bemenu-run
 bindsym $mod+f fullscreen
 bindsym $mod+Shift+space floating toggle
@@ -59,7 +52,6 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit' 
 include /etc/sway/config.d/*
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#workspace_buttons no
 assign [app_id="kitty"] workspace number 1
 assign [app_id="firefox"] workspace number 2
 assign [class="teams-for-linux"] workspace number 3
