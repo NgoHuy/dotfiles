@@ -1,0 +1,7 @@
+configuration {
+ modi: "combi";
+ show-icons: true;
+ icon-theme: "Awaita"; 
+ combi-modi: "window,drun,ssh,run";
+ }
+@theme "/usr/share/rofi/themes/dmenu.rasi"

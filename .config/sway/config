@@ -1,0 +1,73 @@
+set $mod Mod4
+
+input type:keyboard {
+    xkb_layout "us"
+    xkb_variant "dvorak"
+}
+
+bar {
+    swaybar_command waybar
+    #tray_bindcode 272 nop
+    #tray_bindcode 273 nop
+    #status_command i3status
+}
+
+#bindcode 272 nop
+#bindcode 272 nop
+
+input type:touchpad {
+    tap enabled
+    natural_scroll disabled
+}
+
+exec swayidle -w \
+	timeout 600 'swaylock -f -e -i /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png' \
+	timeout 605 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"'
+
+#output eDP-1 scale 1.5
+#xwayland disable
+bindsym Mod1+F2 exec bemenu-run
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+1 workspace number 1                                                                                        
+bindsym $mod+2 workspace number 2                                                                                        
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+    # Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+bindsym $mod+F12 exec swaylock -f -e -i /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png
+bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy -n
+bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | swappy -f -
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+q kill
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit' 
+include /etc/sway/config.d/*
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#workspace_buttons no
+assign [app_id="kitty"] workspace number 1
+assign [app_id="firefox"] workspace number 2
+assign [class="teams-for-linux"] workspace number 3
+assign [app_id="telegram"] workspace number 4
+assign [app_id="thunderbird"] workspace number 5
+assign [app_id="firefox-nightly"] workspace 6
+exec fcitx5
+exec dunst
+exec nm-applet --indicator
+exec kitty
+exec blueman-applet
