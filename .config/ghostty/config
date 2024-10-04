@@ -1,0 +1,82 @@
+font-family = FiraCode Nerd Font
+#font-family = DejaVu Sans
+##font-family-bold =
+##font-family-italic =
+##font-family-bold-italic =
+##font-style =
+##font-style-bold =
+##font-style-italic =
+##font-style-bold-italic =
+##font-feature =
+font-size = 15
+##font-variation =
+##font-variation-bold =
+##font-variation-italic =
+##font-variation-bold-italic =
+##font-codepoint-map =
+##font-thicken =
+##adjust-cell-width =
+##adjust-cell-height =
+##adjust-font-baseline =
+##adjust-underline-position =
+##adjust-underline-thickness =
+##adjust-strikethrough-position =
+##adjust-strikethrough-thickness =
+#selection-foreground =
+#selection-background =
+#cursor-color =
+#cursor-style =
+#cursor-style-blink =
+#cursor-text =
+#mouse-hide-while-typing =
+#mouse-shift-capture =
+#background-opacity =
+#background-blur-radius =
+#unfocused-split-opacity =
+#working-directory =
+#window-padding-x =
+#window-padding-y =
+#window-padding-balance =
+#window-inherit-working-directory =
+#window-inherit-font-size =
+window-decoration = false
+#window-theme = false
+#window-height =
+#window-width =
+#clipboard-read =
+#clipboard-write =
+#clipboard-trim-trailing-spaces =
+#image-storage-limit =
+copy-on-select = true
+#click-repeat-interval =
+#config-file =
+#confirm-close-surface =
+#shell-integration = bash
+#osc-color-report-format =
+#macos-non-native-fullscreen =
+#macos-option-as-alt =
+gtk-single-instance = false
+gtk-wide-tabs = true
+mouse-hide-while-typing = true
+#command = /usr/bin/tmux
+#command-arg = a
+background = #232627
+foreground = #fcfcfc
+cursor-color =#fcfcfc
+selection-background = #ffffff
+palette = 0=#232627
+palette = 8=#7f8c8d
+palette = 1=#ed1515
+palette = 9=#c0392b
+palette = 2=#19cb00
+palette = 10=#23fd00
+palette = 3=#11d116
+palette = 11=#f67400
+palette = 4=#1d99f3
+palette = 12=#3daee9
+palette = 5=#9b59b6
+palette = 13=#8e44ad
+palette = 6=#1abc9c
+palette = 14=#16a085
+palette = 7=#fcfcfc
+palette = 15=#ffffff
