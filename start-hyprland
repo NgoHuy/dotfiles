@@ -1,0 +1,34 @@
+#!/bin/sh
+
+#export GLFW_IM_MODULE=ibus
+#export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export QT4_IM_MODULE=fcitx
+#export KWIN_OPENGL_INTERFACE=egl
+export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORM=wayland,xcb
+export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+#export KWIN_TRIPLE_BUFFER=1
+#export KWIN_COMPOSE=O2
+export GDK_DPI_SCALE=1.5
+#export WLR_NO_HARDWARE_CURSORS=1
+#export WLR_RENDERER=egl
+#export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/
+#export WLR_BACKEND=wayland
+export GDK_BACKEND=wayland,x11
+export XDG_SESSION_TYPE=wayland  
+export XDG_CURRENT_DESKTOP=Hyprland  
+export GBM_BACKEND=nvidia-drm  
+#export __GLX_VENDOR_LIBRARY_NAME=nvidia  
+export WLR_NO_HARDWARE_CURSORS=1  
+#export WLR_DRM_NO_ATOMIC=1  
+export XWAYLAND_NO_GLAMOR=1
+export XDG_SESSION_DESKTOP=Hyprland
+export QT_FONT_DPI=144
+export GDK_BACKEND=wayland
+export QT_QPA_PLATFORM=wayland
+#dbus-run-session sway --unsupported-gpu  
+#sway --unsupported-gpu --debug
+Hyprland
