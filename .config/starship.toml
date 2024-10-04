@@ -1,78 +1,125 @@
-format = """\
-[](bg:#030B16 fg:#7DF9AA)\
-$os\
-[](fg:#7DF9AA bg:#1C3A5E)\
-$time\
-[](fg:#1C3A5E bg:#3B76F0)\
-$directory\
-[](fg:#3B76F0 bg:#FCF392)\
-$git_branch\
-$git_status\
-$git_metrics\
-[](fg:#FCF392 bg:#030B16)\
-$line_break\
-$character\
-"""
+[bun]
+format = "via [$symbol]($style)"
 
-[os]
-disabled = false
-format = '[ $symbol ]($style)'
-style = "bg:#7DF9AA fg:#090c0c"
+[buf]
+format = "via [$symbol]($style)"
 
-[os.symbols]
-Windows = "󰍲 "
-Ubuntu = "󰕈 "
-#SUSE = " "
-#Raspbian = "󰐿 "
-#Mint = "󰣭 "
-#Macos = "󰀵 "
-#Manjaro = " "
-#Linux = "󰌽 "
-#Gentoo = "󰣨 "
-#Fedora = "󰣛 "
-#Alpine = " "
-#Amazon = " "
-#Android = " "
-Arch = "\uE712"
-#Artix = "󰣇 "
-#CentOS = " "
-#Debian = "󰣚 "
-#Redhat = "󱄛 "
-#RedHatEnterprise = "󱄛 "
+[cmake]
+format = "via [$symbol]($style)"
 
-[directory]
-format = "[ $path ]($style)"
-style = "fg:#E4E4E4 bg:#3B76F0"
+[cobol]
+format = "via [$symbol]($style)"
 
-[git_branch]
-format = '[ $symbol$branch(:$remote_branch) ]($style)'
-symbol = "  "
-style = "fg:#1C3A5E bg:#FCF392"
+[crystal]
+format = "via [$symbol]($style)"
 
-[git_status]
-format = '[$all_status]($style)'
-style = "fg:#1C3A5E bg:#FCF392"
+[daml]
+format = "via [$symbol]($style)"
 
-[git_metrics]
-format = "([+$added]($added_style))[]($added_style)"
-added_style = "fg:#1C3A5E bg:#FCF392"
-deleted_style = "fg:bright-red bg:235"
-disabled = false
+[dart]
+format = "via [$symbol]($style)"
 
-[hg_branch]
-format = "[ $symbol$branch ]($style)"
-symbol = " "
+[deno]
+format = "via [$symbol]($style)"
 
-[cmd_duration]
-format = "[  $duration ]($style)"
-style = "fg:bright-white bg:18"
+[dotnet]
+format = "[$symbol(🎯 $tfm )]($style)"
 
-[character]
-success_symbol = '[\$](bold green)'
-error_symbol = '[ ✗](#E84D44) '
+[elixir]
+format = 'via [$symbol]($style)'
 
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:#1d2230"
-format = '[[ 󱑍 $time ](bg:#1C3A5E fg:#8DFBD2)]($style)'
+[elm]
+format = 'via [$symbol]($style)'
+
+[erlang]
+format = 'via [$symbol]($style)'
+
+[fennel]
+format = 'via [$symbol]($style)'
+
+[golang]
+format = 'via [$symbol]($style)'
+
+[gradle]
+format = 'via [$symbol]($style)'
+
+[haxe]
+format = 'via [$symbol]($style)'
+
+[helm]
+format = 'via [$symbol]($style)'
+
+[java]
+format = 'via [$symbol]($style)'
+
+[julia]
+format = 'via [$symbol]($style)'
+
+[kotlin]
+format = 'via [$symbol]($style)'
+
+[lua]
+format = 'via [$symbol]($style)'
+
+[meson]
+format = 'via [$symbol]($style)'
+
+[nim]
+format = 'via [$symbol]($style)'
+
+[nodejs]
+format = 'via [$symbol]($style)'
+
+[ocaml]
+format = 'via [$symbol(\($switch_indicator$switch_name\) )]($style)'
+
+[opa]
+format = 'via [$symbol]($style)'
+
+[perl]
+format = 'via [$symbol]($style)'
+
+[php]
+format = 'via [$symbol]($style)'
+
+[pulumi]
+format = 'via [$symbol$stack]($style)'
+
+[purescript]
+format = 'via [$symbol]($style)'
+
+[python]
+format = 'via [$symbol]($style)'
+
+[raku]
+format = 'via [$symbol]($style)'
+
+[red]
+format = 'via [$symbol]($style)'
+
+[rlang]
+format = 'via [$symbol]($style)'
+
+[ruby]
+format = 'via [$symbol]($style)'
+
+[rust]
+format = 'via [$symbol]($style)'
+
+[solidity]
+format = 'via [$symbol]($style)'
+
+[typst]
+format = 'via [$symbol]($style)'
+
+[swift]
+format = 'via [$symbol]($style)'
+
+[vagrant]
+format = 'via [$symbol]($style)'
+
+[vlang]
+format = 'via [$symbol]($style)'
+
+[zig]
+format = 'via [$symbol]($style)'
